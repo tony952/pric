@@ -1,0 +1,158 @@
+body{
+    background: url(../images/背景1.jpg) no-repeat;
+    background-size: cover;
+}
+/* ----------------横幅 begin------------------------ */
+.banner{
+    width: 960px;
+    height: 250px;
+    background: url(../R-C.png) no-repeat;
+    margin: 80px;
+    opacity: 0.8;
+    box-shadow: 10px 10px 5px #888888;
+    position: relative;
+}
+.banner ul li{
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+}
+.banner ul li img{
+    cursor: pointer;
+}
+.m1 {top: 130px;left: 60px;}
+.m2 {top: 32px;left: 243px;}
+.m3 {top: 150px;left: 313px;}
+.m4 {top: 53px;left: 487px;}
+.m5 {top: 22px;left: 22px;}
+/* ----------------横幅 end------------------------ */
+/* 修改播放器样式 start */
+.music{
+    width: 620px;
+    height: 140px;
+    background: black;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    opacity: 0.8;
+    box-shadow: 10px 15px 15px 1px black;
+}
+/* 修改播放器样式 end */
+.music .m_img{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+/* 修改播放器歌名 */
+.music .m_text span{
+    float: left;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+/* 修改播放器按键 start */
+.music .m_bth {
+    position: absolute;
+    float: left;
+    left: 350px;
+    margin-top: 45px;
+}
+/* 设置上一首样式 */
+.music .m_bth .m_prey {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 45px;
+    background: url(../images/上一集.png) no-repeat;
+    background-size: 50px auto;
+    font-size: 0;
+}
+.music .m_bth .m_prey:hover {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 45px;
+    background: url(../images/上一集+.png) no-repeat;
+    background-size: 50px auto;
+    transition: 0.5s;
+}
+/* 设置播放样式 */
+.music .m_bth .m_play {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../images/暂停.png) no-repeat;
+    background-size: 50px auto;
+    font-size: 0;
+}
+.music .m_bth .m_play:hover {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../images/暂停+.png) no-repeat;
+    background-size: 50px auto;
+    transition: 0.5s;
+}
+/* 设置下一首样式 */
+.music .m_bth .m_next {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../images/下一集.png) no-repeat;
+    background-size: 50px auto;
+    font-size: 0;
+}
+.music .m_bth .m_next:hover {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../images/下一集+.png) no-repeat;
+    background-size: 50px auto;
+    transition: 0.5s;
+}
+.music .m_close{
+    float: right;
+    background: url(../images/50左翻页、左滑.png) no-repeat;
+    background-size: 45px;
+    width: 45px;
+    height: 45px;
+    margin-top: 50px;
+    cursor: pointer;    /* 鼠标变手势 */
+}
+.music .m_bth .m_pause{
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../images/播放.png) no-repeat;
+    background-size: 50px auto;
+    font-size: 0;
+}
+.music .m_bth .m_pause:hover{
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../images/播放+.png) no-repeat;
+    background-size: 50px auto;
+    font-size: 0;
+}
+/* 设置最右边的关闭样式  */
+
+/* 隐藏播放器的样式，js动态替换使用 */
+.music .m_open {background-position: -45px 0px;}
+/* music end */
+/* 修改播放器按键 end */
